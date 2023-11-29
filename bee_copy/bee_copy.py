@@ -35,9 +35,10 @@ def copy_images(source_dir, destination_dir):
 if __name__ == "__main__":
     # Parse command-line arguments
     parser = argparse.ArgumentParser(
-                        description="Copy images from subfolders to a destination folder.")
+                        description="A simple utility to copy all images in a source folder to a flat, single folder, "
+                                    "renaming the copied files with the source folder's root name.")
     parser.add_argument("-s", "--source", required=True,
-                        help="Source directory containing subfolders.")
+                        help="Source directory containing sub-folders to search through.")
     parser.add_argument("-d", "--destination", required=True,
                         help="Destination directory for copied images.")
     args = parser.parse_args()

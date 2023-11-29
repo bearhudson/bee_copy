@@ -2,12 +2,11 @@
 name = "bee-copy"
 version = "0.1.0"
 description = ""
-authors = ["Brian Hudson <reallybrianhudson@gmail.com>"]
+authors = ["bhudson <brian.hudson@flexential.com>"]
 readme = "README.md"
-packages = [{include = "bee_copy"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.0"
 
 
 [build-system]
