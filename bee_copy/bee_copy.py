@@ -39,9 +39,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
                         description="A simple utility to copy all images in a source folder to a flat, single folder, "
                                     "renaming the copied files with the source folder's root name.")
-    parser.add_argument("-s", "--source", required=True,
+    parser.add_argument("source",
                         help="Source directory containing sub-folders to search through.")
-    parser.add_argument("-d", "--destination", required=True,
+    parser.add_argument("destination",
                         help="Destination directory for copied images.")
     args = parser.parse_args()
     # Call the function with the specified source and destination directories
