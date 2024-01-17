@@ -16,6 +16,7 @@ def copy_images(source_dir, destination_dir):
         print("Error: Destination directory cannot be a subdirectory of the source directory.")
         exit(1)
     # Iterate through all files in the source directory and its subdirectories
+    count = 0
     for root, dirs, files in os.walk(source_dir):
         for file in files:
             # Check if the file is an image (you can extend the list of valid extensions)
@@ -29,7 +30,8 @@ def copy_images(source_dir, destination_dir):
                 destination_path = os.path.join(destination_dir, new_filename)
                 # Copy the image file to the destination directory
                 shutil.copy2(source_path, destination_path)
-    print("Images copied successfully.")
+                count = ++count
+    print(f"{count} images copied successfully.")
 
 
 if __name__ == "__main__":
