@@ -30,7 +30,7 @@ def copy_images(source_dir, destination_dir):
                 destination_path = os.path.join(destination_dir, new_filename)
                 # Copy the image file to the destination directory
                 shutil.copy2(source_path, destination_path)
-                count = ++count
+                count += 1
     print(f"{count} images copied successfully.")
 
 
